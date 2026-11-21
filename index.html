@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FIRE SAFE - Học kiến thức phòng cháy, kỹ năng thoát nạn và cách gọi trợ giúp khẩn cấp.">
+<title>FIRE SAFE | Trung tâm học tập PCCC</title>
+<style>
+:root{--navy:#14213a;--navy2:#203653;--red:#d94335;--orange:#ff9c50;--cream:#fff8f2;--ink:#253247;--muted:#657187;--line:#e7eaf0;--green:#18794e;--blue:#eaf3ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:30;background:#14213af2;color:#fff;backdrop-filter:blur(12px);box-shadow:0 3px 16px #0c19301c}.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-weight:900;font-size:1.25rem;letter-spacing:1px}.logo span{color:#ffad68}.navlinks{display:flex;gap:18px;font-size:.88rem}.navlinks a{color:#e5ebf5}.navlinks a:hover{color:#ffb36e}.menu{display:none;background:transparent;color:#fff;border:1px solid #ffffff55;border-radius:9px;padding:6px 10px}
+.hero{background:radial-gradient(circle at 80% 30%,#784236 0,#283955 36%,#14213a 72%);color:white;overflow:hidden}.hero-grid{min-height:555px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:30px;padding:55px 0}.pill{display:inline-block;padding:6px 13px;border:1px solid #ffffff44;background:#ffffff12;border-radius:30px;color:#ffdabd;font-size:.83rem;font-weight:700}.hero h1{font-size:clamp(2.6rem,6vw,4.7rem);line-height:1.04;letter-spacing:-2px;margin:20px 0}.grad{background:linear-gradient(90deg,#ffc078,#ff6452);color:transparent;background-clip:text}.hero p{max-width:600px;color:#d9e1ed;font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 18px;font-weight:800;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(110deg,#d94335,#ff914e);color:#fff;box-shadow:0 10px 24px #d9433544}.outline{border:1px solid #ffffff66;color:#fff;background:#ffffff10}.hero-art{min-height:365px;display:grid;place-items:center;position:relative}.halo{width:min(355px,78vw);aspect-ratio:1;border:1px solid #ffffff35;border-radius:50%;position:absolute;animation:rotate 28s linear infinite}.halo:before,.halo:after{content:"";position:absolute;width:14px;height:14px;border-radius:50%;background:#ffad68;box-shadow:0 0 22px #ffad68}.halo:before{top:40px;left:55px}.halo:after{right:18px;bottom:75px;background:#ff6757}.bigshield{width:220px;height:250px;display:grid;place-items:center;clip-path:polygon(50% 0,91% 17%,86% 67%,50% 100%,14% 67%,9% 17%);background:linear-gradient(145deg,#ffc078,#e34c3b 65%,#982b34);filter:drop-shadow(0 18px 25px #0008);animation:float 4s ease-in-out infinite}.bigshield span{font-size:6rem}.float{position:absolute;font-size:2rem;animation:float 3s ease-in-out infinite}.f1{top:12%;right:13%}.f2{bottom:10%;left:12%;animation-delay:1s}.f3{top:26%;left:5%;animation-delay:1.5s}
+@keyframes float{50%{transform:translateY(-13px)}}@keyframes rotate{to{transform:rotate(360deg)}}
+.notice{background:#fff2e8;border-bottom:1px solid #f7dfcf}.notice .wrap{padding:12px 0;color:#7d382b;font-size:.92rem}
+section{padding:76px 0}.tint{background:var(--cream)}.pale{background:#f4f7fb}.head{text-align:center;max-width:760px;margin:0 auto 36px}.eyebrow{font-size:.77rem;font-weight:900;letter-spacing:1.8px;color:var(--red);text-transform:uppercase}.head h2{font-size:clamp(2rem,4vw,2.8rem);line-height:1.15;color:var(--navy);margin:8px 0 12px}.head p{color:var(--muted);margin:0}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:19px;padding:21px;background:white;box-shadow:0 8px 25px #1a29400a;transition:.22s}.card:hover{transform:translateY(-4px);box-shadow:0 15px 30px #1a294016}.art{height:145px;border-radius:14px;background:linear-gradient(135deg,#fff0e4,#ffe0d2);display:grid;place-items:center;font-size:4.2rem;margin-bottom:16px;position:relative;overflow:hidden}.art.blue{background:linear-gradient(135deg,#e9f3ff,#d8e9ff)}.art.green{background:linear-gradient(135deg,#e8f8ef,#d0f0dd)}.art.purple{background:linear-gradient(135deg,#f1edff,#dfd8ff)}.art.yellow{background:linear-gradient(135deg,#fff8d9,#ffebae)}.art small{position:absolute;bottom:8px;right:12px;font-size:.72rem;font-weight:800;color:#735c52}.card h3{margin:0 0 7px;color:var(--navy);font-size:1.12rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.tag{display:inline-block;margin-top:12px;padding:4px 9px;border-radius:30px;background:#fff0e8;color:#a63b2e;font-size:.75rem;font-weight:800}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.panel{background:linear-gradient(145deg,#182b48,#304966);color:white;border-radius:23px;padding:28px;min-height:300px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}.panel .emoji{font-size:4rem}.panel h3{font-size:1.8rem;line-height:1.2;max-width:390px;margin:12px 0}.panel p{color:#dce6f2;max-width:430px}.steps{display:grid;gap:12px;margin-top:20px}.step{display:flex;gap:12px;padding:13px;border:1px solid var(--line);border-radius:13px;background:#fff}.num{flex:0 0 34px;height:34px;border-radius:50%;background:#fff0e8;color:var(--red);display:grid;place-items:center;font-weight:900}.step strong{color:var(--navy)}.step p{margin:2px 0 0;color:var(--muted);font-size:.92rem}
+.callcard{border:1px solid #f1d4c9;border-radius:22px;background:linear-gradient(135deg,#fff5ef,#fff);padding:25px}.callrow{display:flex;align-items:center;gap:16px;padding:15px 0;border-bottom:1px solid #f1e3dd}.callrow:last-child{border:0}.number{font-size:1.65rem;font-weight:900;color:var(--red);min-width:78px}.callrow h3{margin:0;color:var(--navy);font-size:1.05rem}.callrow p{margin:2px 0 0;color:var(--muted);font-size:.9rem}.callscript{background:#f3f6fb;border-radius:15px;padding:17px;margin-top:18px}.callscript strong{color:var(--navy)}.callscript ol{margin:8px 0 0;padding-left:22px;color:#4d5a70}
+.warning{padding:15px;border-radius:13px;background:#fff4d9;color:#75501b;border:1px solid #f3dfaa;margin-top:17px;font-size:.92rem}
+.stepsline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tile{background:white;border:1px solid var(--line);border-radius:16px;padding:17px;text-align:center}.tile .emoji{font-size:2.3rem}.tile strong{display:block;color:var(--navy);margin:7px 0}.tile p{font-size:.86rem;color:var(--muted);margin:0}
+.quizbox,.scenarioBox{max-width:800px;margin:auto;background:white;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 12px 34px #14213d0b}.bar{height:8px;border-radius:20px;background:#edf0f5;overflow:hidden;margin:12px 0 23px}.bar span{height:100%;display:block;width:0;background:linear-gradient(90deg,var(--red),var(--orange));transition:.3s}.question{font-size:1.2rem;font-weight:850;color:var(--navy);margin:0 0 16px}.answers{display:grid;gap:10px}.answer{border:1px solid var(--line);background:white;border-radius:12px;padding:13px;text-align:left;color:var(--ink)}.answer:hover{border-color:var(--red);background:#fff9f5}.answer.correct{border-color:#55a982;background:#effaf4}.answer.wrong{border-color:#e7796c;background:#fff2f0}.answer:disabled{cursor:default}.feedback{min-height:48px;padding:10px 0;color:#536176;font-weight:650}.smallbtn{background:var(--navy);color:white;border:0;border-radius:10px;padding:10px 16px;font-weight:800}.smallbtn:disabled{opacity:.4;cursor:not-allowed}.quiztop,.quizbottom{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.muted{color:var(--muted);font-size:.88rem}
+.scenGrid{display:grid;grid-template-columns:.75fr 1.25fr;gap:18px}.tabs{display:grid;gap:9px}.tab{border:1px solid var(--line);background:#fff;border-radius:12px;padding:13px;text-align:left;color:var(--navy);font-weight:800}.tab.active{background:var(--navy);color:white}.scenarioBox h3{margin:5px 0;color:var(--navy)}.scenarioOptions{display:grid;gap:9px;margin-top:15px}.scenarioOptions button{border:1px solid var(--line);border-radius:12px;background:white;padding:12px;text-align:left}.scenarioOptions button:hover{border-color:var(--red)}.result{display:none;background:#eff8f2;color:#176443;border-radius:12px;padding:14px;margin-top:14px}
+.video{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:white}.videoimg{height:175px;background:linear-gradient(135deg,#1c3150,#b9493c);display:grid;place-items:center;color:white;font-size:3rem}.videoimg.alt{background:linear-gradient(135deg,#2b5368,#e18b48)}.videoText{padding:17px}.videoText h3{margin:0 0 6px;color:var(--navy)}.videoText p{margin:0 0 10px;color:var(--muted);font-size:.91rem}.videoText a{color:var(--red);font-weight:800}
+.faq details{border:1px solid var(--line);border-radius:13px;padding:15px 17px;background:white;margin:10px 0}.faq summary{font-weight:800;color:var(--navy);cursor:pointer}.faq details p{color:var(--muted);margin-bottom:0}
+.cta{background:linear-gradient(110deg,#a92e2d,#ed593d);color:white;border-radius:22px;padding:29px;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{margin:0 0 5px}.cta p{margin:0;color:#ffe4dc}
+footer{background:var(--navy);color:#d6dfed;padding:34px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#fff}.foot small{color:#aebbd0}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:var(--navy);padding:18px 5%;flex-direction:column}.navlinks.open{display:flex}.menu{display:block}.hero-grid{grid-template-columns:1fr;padding:48px 0 20px}.hero-art{min-height:290px}.grid3{grid-template-columns:1fr 1fr}.two,.scenGrid{grid-template-columns:1fr}.stepsline{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.grid3,.grid2{grid-template-columns:1fr}.stepsline{grid-template-columns:1fr 1fr}.quizbox,.scenarioBox{padding:18px}.bigshield{width:180px;height:205px}.bigshield span{font-size:5rem}.number{font-size:1.4rem;min-width:65px}.callrow{gap:10px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#home">🔥 FIRE<span>SAFE</span></a>
+<nav class="navlinks" id="nav"><a href="#nguyco">Nguy cơ</a><a href="#phongchay">Phòng cháy</a><a href="#thoatHiem">Thoát hiểm</a><a href="#goiCuuHo">Gọi trợ giúp</a><a href="#quiz">Trắc nghiệm</a><a href="#video">Video</a></nav>
+<button class="menu" id="menu" aria-label="Mở menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><span class="pill">🛡️ TRUNG TÂM HỌC TẬP AN TOÀN</span>
+<h1>HIỂU ĐỂ PHÒNG<br><span class="grad">CHÁY, THOÁT NẠN</span></h1>
+<p>Trang bị kiến thức phòng cháy chữa cháy, luyện tập kỹ năng thoát hiểm và biết cách tìm kiếm trợ giúp khi khẩn cấp. Học hôm nay – chủ động bảo vệ ngày mai.</p>
+<div class="actions"><a class="btn primary" href="#nguyco">Khám phá bài học →</a><a class="btn outline" href="#quiz">Làm bài kiểm tra ✦</a></div>
+</div>
+<div class="hero-art"><div class="halo"></div><div class="bigshield"><span>🧯</span></div><span class="float f1">✨</span><span class="float f2">🔥</span><span class="float f3">🚨</span></div>
+</div></section>
+<div class="notice"><div class="wrap">⚠️ <strong>Ghi nhớ:</strong> Khi có cháy, ưu tiên báo động và thoát nạn an toàn. Không mạo hiểm quay lại hoặc tự chữa cháy khi không được huấn luyện.</div></div>
+
+<section id="nguyco"><div class="wrap"><div class="head"><div class="eyebrow">BÀI HỌC 01 · NHẬN BIẾT NGUY CƠ</div><h2>Cháy có thể bắt đầu từ những điều rất quen thuộc</h2><p>Nhận biết sớm các nguy cơ giúp chúng ta chủ động phòng tránh trong gia đình, trường học và nơi công cộng.</p></div>
+<div class="grid3">
+<article class="card"><div class="art">🔌<small>NGUY CƠ ĐIỆN</small></div><h3>Thiết bị và hệ thống điện</h3><p>Dây điện hư hỏng, ổ cắm quá tải, thiết bị tỏa nhiệt hoặc sử dụng sai cách có thể gây mất an toàn.</p><span class="tag">Kiểm tra – sử dụng đúng cách</span></article>
+<article class="card"><div class="art yellow">🍳<small>NGUY CƠ NHÀ BẾP</small></div><h3>Nấu nướng và nguồn nhiệt</h3><p>Bếp đang hoạt động không được trông coi, dầu mỡ hoặc vật dễ cháy đặt gần nguồn nhiệt đều tiềm ẩn rủi ro.</p><span class="tag">Không rời bếp khi đang nấu</span></article>
+<article class="card"><div class="art purple">🕯️<small>NGUỒN LỬA</small></div><h3>Diêm, bật lửa và nến</h3><p>Để vật tạo lửa gần giấy, vải, rèm cửa hoặc ngoài tầm kiểm soát có thể dẫn đến cháy.</p><span class="tag">Không nghịch lửa</span></article>
+<article class="card"><div class="art blue">🔋<small>PIN & SẠC</small></div><h3>Sạc pin và thiết bị điện tử</h3><p>Dùng bộ sạc phù hợp, không dùng pin phồng hoặc hư hỏng; không đặt thiết bị đang sạc dưới chăn hay nơi bí nhiệt.</p><span class="tag">Dùng phụ kiện đạt chất lượng</span></article>
+<article class="card"><div class="art green">🧴<small>VẬT DỄ CHÁY</small></div><h3>Chất và vật liệu dễ cháy</h3><p>Giữ giấy, vải, cồn và các vật liệu dễ cháy xa nguồn nhiệt; bảo quản theo hướng dẫn trên nhãn sản phẩm.</p><span class="tag">Sắp xếp gọn gàng</span></article>
+<article class="card"><div class="art">🚪<small>LỐI ĐI</small></div><h3>Lối thoát bị cản trở</h3><p>Đồ đạc để chắn hành lang, cửa thoát hiểm hoặc cầu thang có thể làm chậm quá trình thoát nạn.</p><span class="tag">Luôn giữ lối đi thông thoáng</span></article>
+</div></div></section>
+
+<section class="tint" id="phongchay"><div class="wrap"><div class="head"><div class="eyebrow">BÀI HỌC 02 · CHỦ ĐỘNG PHÒNG CHÁY</div><h2>Phòng cháy từ những thói quen nhỏ</h2><p>Mỗi môi trường có nguy cơ khác nhau. Hãy hình thành thói quen an toàn mỗi ngày.</p></div>
+<div class="grid3">
+<article class="card"><div class="art blue">🏠</div><h3>Tại gia đình</h3><p>• Tắt thiết bị điện khi không cần thiết.<br>• Không để vật dễ cháy sát bếp, bàn thờ, nguồn nhiệt.<br>• Không tự ý sửa điện hoặc thiết bị hư hỏng.<br>• Cùng gia đình kiểm tra lối thoát và thống nhất điểm tập kết.</p></article>
+<article class="card"><div class="art green">🏫</div><h3>Tại trường học</h3><p>• Không nghịch ổ điện, dây điện, thiết bị phòng thí nghiệm.<br>• Không đùa nghịch với diêm, bật lửa.<br>• Ghi nhớ cầu thang và cửa thoát hiểm.<br>• Báo giáo viên khi phát hiện nguy cơ mất an toàn.</p></article>
+<article class="card"><div class="art yellow">🏬</div><h3>Nơi công cộng</h3><p>• Quan sát biển chỉ dẫn thoát nạn khi mới đến.<br>• Không chắn cửa, hành lang và thiết bị PCCC.<br>• Chú ý thông báo an toàn.<br>• Tuân thủ hướng dẫn của nhân viên và lực lượng chức năng.</p></article>
+</div>
+<div class="warning">💡 <strong>Ghi nhớ:</strong> Không tự thử nghiệm tạo lửa, gây khói hoặc kiểm tra thiết bị điện nguy hiểm để thực hành. Hãy học qua mô hình, tranh ảnh, video và buổi hướng dẫn có người có chuyên môn.</div>
+</div></section>
+
+<section id="thoatHiem"><div class="wrap"><div class="head"><div class="eyebrow">BÀI HỌC 03 · KỸ NĂNG THOÁT HIỂM</div><h2>6 bước cần nhớ khi xảy ra cháy</h2><p>Tình huống thực tế có thể thay đổi. Hãy ưu tiên hướng dẫn của lực lượng cứu nạn và kế hoạch thoát nạn tại nơi bạn đang ở.</p></div>
+<div class="stepsline">
+<div class="tile"><div class="emoji">📢</div><strong>1. Báo động</strong><p>Hô hoán, nhấn nút báo cháy nếu có thể tiếp cận an toàn và báo người xung quanh.</p></div>
+<div class="tile"><div class="emoji">🚪</div><strong>2. Tìm lối ra</strong><p>Đi theo biển EXIT, sơ đồ thoát nạn và hướng dẫn của người phụ trách.</p></div>
+<div class="tile"><div class="emoji">⬇️</div><strong>3. Tránh khói</strong><p>Khói thường bốc lên; cúi thấp người khi di chuyển qua vùng có khói nếu lối đi vẫn an toàn.</p></div>
+<div class="tile"><div class="emoji">🪜</div><strong>4. Dùng cầu thang</strong><p>Không dùng thang máy khi có cháy. Không chen lấn, xô đẩy.</p></div>
+<div class="tile"><div class="emoji">📍</div><strong>5. Đến điểm tập kết</strong><p>Đi đến nơi tập kết đã quy định, tránh xa tòa nhà và đường xe cứu hộ.</p></div>
+<div class="tile"><div class="emoji">📞</div><strong>6. Gọi trợ giúp</strong><p>Báo vị trí, tình hình và người có thể còn mắc kẹt cho lực lượng chức năng.</p></div>
+<div class="tile"><div class="emoji">🚫</div><strong>Không quay lại</strong><p>Không quay lại lấy điện thoại, cặp sách, giấy tờ hoặc tài sản.</p></div>
+<div class="tile"><div class="emoji">🤝</div><strong>Chờ hướng dẫn</strong><p>Ở nơi an toàn, làm theo chỉ dẫn của lực lượng cứu nạn.</p></div>
+</div>
+<div class="two" style="margin-top:35px">
+<div class="card"><div class="art blue">🌫️</div><h3>Nếu gặp khói trên đường thoát</h3><p>Không đi xuyên qua vùng khói dày hoặc lửa. Nếu lối thoát bị khói/lửa chặn, tìm nơi an toàn hơn, đóng cửa ngăn khói nếu có thể, gọi 114 và báo chính xác vị trí. Cúi thấp người chỉ khi đang di chuyển qua vùng khói và vẫn còn lối thoát an toàn.</p></div>
+<div class="card"><div class="art green">🚪</div><h3>Nếu không thể ra khỏi phòng</h3><p>Ở lại nơi có thể ngăn khói lửa xâm nhập; đóng cửa, dùng vải ẩm chèn khe cửa nếu có sẵn, gọi 114 và nói rõ vị trí. Ra hiệu từ cửa sổ/ban công nếu an toàn. Không nhảy từ trên cao và không tự tìm đường qua lửa.</p></div>
+</div>
+<div class="warning">⚠️ Khăn hoặc vải che mũi miệng không thể bảo vệ bạn khỏi khí độc trong khói. Cách an toàn nhất là tránh khói và thoát ra nơi an toàn càng sớm càng tốt.</div>
+</div></section>
+
+<section class="pale" id="goiCuuHo"><div class="wrap"><div class="head"><div class="eyebrow">BÀI HỌC 04 · GỌI TRỢ GIÚP KHẨN CẤP</div><h2>Khi cần giúp đỡ, hãy gọi đúng số</h2><p>Ghi nhớ các số điện thoại khẩn cấp tại Việt Nam và cung cấp thông tin ngắn gọn, rõ ràng.</p></div>
+<div class="two">
+<div class="callcard">
+<div class="callrow"><div class="number">114</div><div><h3>Cảnh sát PCCC và cứu nạn, cứu hộ</h3><p>Gọi khi xảy ra cháy, nổ hoặc cần cứu nạn, cứu hộ.</p></div></div>
+<div class="callrow"><div class="number">115</div><div><h3>Cấp cứu y tế</h3><p>Gọi khi có người bị thương hoặc cần hỗ trợ y tế khẩn cấp.</p></div></div>
+<div class="callrow"><div class="number">113</div><div><h3>Công an</h3><p>Gọi khi cần trình báo hoặc yêu cầu hỗ trợ về an ninh, trật tự.</p></div></div>
+<div class="callrow"><div class="number">112</div><div><h3>Tổng đài khẩn cấp quốc gia</h3><p>Tiếp nhận thông tin về sự cố, thiên tai, thảm họa và tình huống khẩn cấp theo phạm vi phục vụ.</p></div></div>
+</div>
+<div>
+<div class="panel"><div class="emoji">📞</div><h3>Gọi 114 khi phát hiện cháy</h3><p>Không chờ đám cháy lớn mới báo. Hãy gọi khi phát hiện cháy và có thể thực hiện cuộc gọi an toàn.</p><a class="btn primary" href="tel:114" style="width:max-content">☎ Gọi 114 trên thiết bị hỗ trợ</a></div>
+<div class="callscript"><strong>🗣️ Khi gọi 114, hãy nói rõ:</strong><ol><li>Địa chỉ chính xác: số nhà, đường, phường/xã, tỉnh/thành phố.</li><li>Đang xảy ra cháy ở đâu, loại khu vực/công trình nào.</li><li>Có người bị mắc kẹt hoặc bị thương không; vị trí gần đúng nếu biết.</li><li>Tên và số điện thoại liên hệ của bạn nếu được hỏi.</li><li>Lắng nghe và làm theo hướng dẫn của tổng đài.</li></ol></div>
+</div></div>
+<div class="warning">📌 Chỉ gọi khi có tình huống khẩn cấp thật. Không gọi thử, không đùa nghịch hoặc gọi để kiểm tra tổng đài. Nếu bạn còn nhỏ, hãy báo ngay cho người lớn và nhờ họ hỗ trợ.</div>
+</div></section>
+
+<section><div class="wrap"><div class="head"><div class="eyebrow">BÀI HỌC 05 · NHẬN BIẾT THIẾT BỊ</div><h2>Những người bạn hỗ trợ an toàn</h2><p>Biết tên và công dụng cơ bản của thiết bị PCCC giúp bạn nhận biết chúng và không sử dụng sai mục đích.</p></div>
+<div class="grid3">
+<article class="card"><div class="art">🧯</div><h3>Bình chữa cháy</h3><p>Thiết bị hỗ trợ xử lý một số đám cháy nhỏ khi người sử dụng được huấn luyện, chọn đúng loại bình và có đường thoát an toàn. Không cố chữa cháy khi lửa lan hoặc có nhiều khói.</p></article>
+<article class="card"><div class="art blue">🔔</div><h3>Chuông và nút báo cháy</h3><p>Giúp cảnh báo mọi người khi có dấu hiệu cháy. Khi nghe chuông báo, không bỏ qua; hãy bình tĩnh làm theo quy trình thoát nạn.</p></article>
+<article class="card"><div class="art green">🌫️</div><h3>Đầu báo khói</h3><p>Thiết bị phát hiện khói và phát tín hiệu cảnh báo sớm. Không che chắn, tháo pin hoặc tự ý vô hiệu hóa thiết bị.</p></article>
+<article class="card"><div class="art yellow">🟩</div><h3>Biển EXIT / lối thoát</h3><p>Chỉ dẫn hướng đi đến lối thoát nạn. Hãy quan sát vị trí biển khi mới đến một tòa nhà.</p></article>
+<article class="card"><div class="art purple">🧭</div><h3>Sơ đồ thoát nạn</h3><p>Thể hiện vị trí hiện tại, lối thoát và thiết bị an toàn. Hãy tìm hiểu sơ đồ tại trường học và nơi công cộng.</p></article>
+<article class="card"><div class="art blue">🚒</div><h3>Xe chữa cháy và cứu hộ</h3><p>Phương tiện chuyên dụng của lực lượng chức năng. Luôn nhường đường và không cản trở khu vực làm nhiệm vụ.</p></article>
+</div>
+<div class="warning">Không tự ý thực hành với bình chữa cháy, thiết bị điện, nguồn lửa hoặc khói. Việc thực hành cần có người hướng dẫn đủ chuyên môn và địa điểm được tổ chức an toàn.</div>
+</div></section>
+
+<section class="tint" id="quiz"><div class="wrap"><div class="head"><div class="eyebrow">BÀI HỌC 06 · KIỂM TRA KIẾN THỨC</div><h2>Thử thách 12 câu hỏi PCCC</h2><p>Chọn một đáp án. Sau mỗi câu, website sẽ giải thích để bạn hiểu vì sao đó là lựa chọn an toàn.</p></div>
+<div class="quizbox">
+<div class="quiztop"><strong id="qCount">Câu 1 / 12</strong><strong id="qScore">Điểm: 0</strong></div><div class="bar"><span id="qBar"></span></div>
+<p class="question" id="qText"></p><div class="answers" id="qAnswers"></div><div class="feedback" id="qFeedback" aria-live="polite"></div>
+<div class="quizbottom"><span class="muted" id="qHint">Chọn đáp án phù hợp nhất.</span><button class="smallbtn" id="qNext" disabled>Câu tiếp theo →</button></div>
+</div></div></section>
+
+<section id="tinhhuong"><div class="wrap"><div class="head"><div class="eyebrow">BÀI HỌC 07 · LUYỆN TẬP TÌNH HUỐNG</div><h2>Bạn sẽ xử lý thế nào?</h2><p>Chọn tình huống, đọc kỹ bối cảnh và chọn phương án ưu tiên an toàn.</p></div>
+<div class="scenGrid"><div class="tabs" id="tabs">
+<button class="tab active" data-i="0">🏫 Khói ở hành lang trường</button>
+<button class="tab" data-i="1">🏠 Mùi khét trong nhà</button>
+<button class="tab" data-i="2">🏢 Chuông báo cháy nơi công cộng</button>
+<button class="tab" data-i="3">🚪 Lối ra bị khói chặn</button>
+<button class="tab" data-i="4">📞 Cần báo tin cho 114</button>
+</div>
+<div class="scenarioBox"><div class="eyebrow">TÌNH HUỐNG GIẢ ĐỊNH</div><h3 id="sTitle"></h3><p id="sText"></p><div class="scenarioOptions" id="sOptions"></div><div class="result" id="sResult" aria-live="polite"></div><button class="smallbtn" id="sRetry" style="display:none;margin-top:12px">Thử lại</button></div>
+</div></div></section>
+
+<section class="pale" id="video"><div class="wrap"><div class="head"><div class="eyebrow">BÀI HỌC 08 · THƯ VIỆN VIDEO</div><h2>Học qua hình ảnh và video</h2><p>Chọn các video hướng dẫn từ cơ quan chức năng, trường học hoặc nguồn giáo dục đáng tin cậy.</p></div>
+<div class="grid2">
+<article class="video"><div class="videoimg">🚒 ▶</div><div class="videoText"><h3>Kỹ năng thoát nạn khi có cháy</h3><p>Ôn lại cách nhận biết lối thoát, tránh khói và di chuyển đến nơi an toàn.</p><a href="https://www.youtube.com/results?search_query=Bo+Cong+an+ky+nang+thoat+nan+khi+co+chay" target="_blank" rel="noopener">Tìm video từ nguồn chính thống ↗</a></div></article>
+<article class="video"><div class="videoimg alt">🏠 ▶</div><div class="videoText"><h3>Phòng cháy trong gia đình</h3><p>Tìm hiểu các thói quen phòng ngừa nguy cơ cháy từ điện, bếp và nguồn nhiệt.</p><a href="https://www.youtube.com/results?search_query=Bo+Cong+an+khuyen+cao+phong+chay+gia+dinh" target="_blank" rel="noopener">Tìm video phù hợp ↗</a></div></article>
+<article class="video"><div class="videoimg alt">🧯 ▶</div><div class="videoText"><h3>Nhận biết thiết bị PCCC</h3><p>Tìm hiểu tên gọi và công dụng của bình chữa cháy, đầu báo khói, chuông báo cháy.</p><a href="https://www.youtube.com/results?search_query=huong+dan+nhan+biet+thiet+bi+phong+chay+chua+chay" target="_blank" rel="noopener">Tìm video phù hợp ↗</a></div></article>
+<article class="video"><div class="videoimg">🏫 ▶</div><div class="videoText"><h3>Diễn tập thoát nạn tại trường học</h3><p>Quan sát quy trình diễn tập có tổ chức và cách tập trung tại điểm tập kết.</p><a href="https://www.youtube.com/results?search_query=dien+tap+phong+chay+chua+chay+truong+hoc" target="_blank" rel="noopener">Tìm video phù hợp ↗</a></div></article>
+</div><p class="muted" style="margin-top:15px">Các liên kết trên mở kết quả tìm kiếm để bạn lựa chọn video phù hợp. Khi dự thi, hãy kiểm tra nguồn, nội dung và quyền sử dụng video trước khi nhúng trực tiếp.</p></div></section>
+
+<section><div class="wrap"><div class="head"><div class="eyebrow">GÓC GIẢI ĐÁP</div><h2>Câu hỏi thường gặp</h2></div><div class="faq">
+<details><summary>Phát hiện cháy thì gọi số nào?</summary><p>Gọi 114 để báo cháy và yêu cầu cứu nạn, cứu hộ. Nếu có người cần cấp cứu y tế, có thể cần gọi thêm 115 hoặc nhờ người khác gọi.</p></details>
+<details><summary>Có nên dùng thang máy khi xảy ra cháy không?</summary><p>Không. Hãy dùng lối thoát nạn và cầu thang bộ theo chỉ dẫn an toàn. Thang máy có thể ngừng hoạt động hoặc đưa người đến khu vực nguy hiểm.</p></details>
+<details><summary>Nếu lối thoát bị khói hoặc lửa chặn thì sao?</summary><p>Không cố đi xuyên qua. Tìm nơi có thể ngăn khói lửa xâm nhập, đóng cửa, gọi 114, báo vị trí và làm theo hướng dẫn của lực lượng cứu nạn. Không nhảy từ trên cao.</p></details>
+<details><summary>Học sinh có nên tự dùng bình chữa cháy không?</summary><p>Không tự ý thực hành. Học sinh cần báo người lớn, thoát nạn và chỉ tham gia thực hành thiết bị khi có người đủ chuyên môn hướng dẫn trong buổi huấn luyện an toàn.</p></details>
+<details><summary>Khăn ướt có lọc được khí độc trong khói không?</summary><p>Không. Khăn hoặc vải không bảo vệ được bạn khỏi các khí độc trong khói. Hãy tránh vùng khói và thoát ra nơi an toàn càng sớm càng tốt.</p></details>
+</div></div></section>
+
+<section><div class="wrap"><div class="cta"><div><h2>Chủ động hôm nay – An toàn ngày mai!</h2><p>Học kiến thức đúng, chia sẻ với gia đình và cùng xây dựng môi trường an toàn.</p></div><a class="btn outline" href="#quiz">Làm lại thử thách ↑</a></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>🔥 FIRE SAFE</strong><br><small>Học PCCC – Bảo vệ tương lai.</small></div><div><strong>Thông điệp</strong><br><small>Phòng ngừa chủ động · Thoát nạn an toàn · Gọi trợ giúp đúng lúc</small></div><div><small>Website mẫu giáo dục. Nội dung không thay thế huấn luyện và hướng dẫn của cơ quan chức năng.</small></div></div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+$("menu").onclick=()=>$("nav").classList.toggle("open");
+document.querySelectorAll("#nav a").forEach(a=>a.onclick=()=>$("nav").classList.remove("open"));
+
+const qs=[
+["Khi phát hiện có cháy ở trường, việc nên làm là gì?",["Trốn trong lớp và chờ","Báo động cho giáo viên, mọi người và làm theo hướng dẫn thoát nạn","Quay lại lấy cặp sách"],1,"Báo động sớm và làm theo hướng dẫn giúp mọi người rời khỏi khu vực nguy hiểm."],
+["Số điện thoại báo cháy và cứu nạn, cứu hộ là số nào?",["113","114","115"],1,"114 là số báo cháy và cứu nạn, cứu hộ."],
+["Khi có cháy, có nên đi thang máy không?",["Không, dùng lối thoát nạn an toàn","Có nếu thang máy gần","Có nếu đi cùng người lớn"],0,"Không dùng thang máy khi có cháy. Hãy đi theo lối thoát nạn an toàn."],
+["Thấy dây điện hư hỏng, bạn nên làm gì?",["Tự sửa ngay","Chạm thử xem có điện không","Tránh xa và báo người lớn"],2,"Không chạm vào dây điện hư hỏng. Hãy báo người lớn hoặc người có chuyên môn."],
+["Khi đã ra ngoài an toàn, bạn nên làm gì?",["Quay lại lấy điện thoại","Đến điểm tập kết và không quay lại","Đứng sát cửa tòa nhà"],1,"Đến điểm tập kết an toàn và không quay lại khu vực nguy hiểm."],
+["Nếu lối thoát có khói dày, bạn nên làm gì?",["Cố chạy xuyên qua","Dừng lại, tìm lối/nơi an toàn khác và gọi trợ giúp","Mở mọi cánh cửa để tìm đường"],1,"Không đi xuyên qua vùng khói dày. Tìm nơi an toàn, báo vị trí cho 114 và làm theo hướng dẫn."],
+["Khi gọi 114, thông tin nào quan trọng nhất?",["Địa chỉ và tình hình cháy, người có thể mắc kẹt","Màu quần áo của mình","Tên trường học yêu thích"],0,"Địa chỉ chính xác, tình hình cháy và thông tin người mắc kẹt giúp lực lượng cứu hộ xác định tình huống."],
+["Bạn nghe chuông báo cháy ở trung tâm thương mại. Nên làm gì?",["Bỏ qua nếu chưa thấy lửa","Quay lại quầy hàng","Bình tĩnh làm theo hướng dẫn và tìm lối thoát nạn"],2,"Không bỏ qua chuông báo. Hãy làm theo chỉ dẫn và di chuyển đến nơi an toàn."],
+["Có nên để giấy, rèm hoặc vải sát bếp đang nóng không?",["Không, cần để vật dễ cháy xa nguồn nhiệt","Có, nếu chỉ để một lúc","Có, nếu mở cửa sổ"],0,"Giữ vật dễ cháy cách xa bếp và nguồn nhiệt."],
+["Đầu báo khói có tác dụng gì?",["Làm mát căn phòng","Phát hiện khói và cảnh báo sớm","Tự động mở cửa thoát hiểm"],1,"Đầu báo khói phát hiện khói và phát tín hiệu cảnh báo; không được che chắn hoặc vô hiệu hóa."],
+["Nếu không thể rời khỏi phòng vì bên ngoài có khói/lửa, nên làm gì?",["Nhảy từ cửa sổ","Nấp trong tủ kín","Ở nơi có thể ngăn khói, đóng cửa, gọi 114 và báo vị trí"],2,"Không nhảy từ trên cao. Hãy ngăn khói xâm nhập nếu có thể, gọi 114 và báo vị trí để được hướng dẫn."],
+["Khăn ướt có thể bảo vệ hoàn toàn khỏi khí độc trong khói không?",["Có","Không","Chỉ cần khăn thật dày"],1,"Khăn không lọc được khí độc. Cần tránh khói và thoát nạn an toàn."]
+];
+let qi=0,score=0,done=false;
+function drawQ(){let q=qs[qi];done=false;$("qCount").textContent=`Câu ${qi+1} / ${qs.length}`;$("qScore").textContent=`Điểm: ${score}`;$("qBar").style.width=`${qi/qs.length*100}%`;$("qText").textContent=q[0];$("qFeedback").textContent="";$("qHint").textContent="Chọn một đáp án phù hợp nhất.";$("qNext").disabled=true;$("qNext").textContent=qi===qs.length-1?"Xem kết quả":"Câu tiếp theo →";$("qAnswers").innerHTML="";
+q[1].forEach((v,i)=>{let b=document.createElement("button");b.className="answer";b.textContent=String.fromCharCode(65+i)+". "+v;b.onclick=()=>answer(i);$("qAnswers").appendChild(b)})}
+function answer(i){if(done)return;done=true;let q=qs[qi];if(i===q[2])score++;[...$("qAnswers").children].forEach((b,j)=>{b.disabled=true;if(j===q[2])b.classList.add("correct");else if(j===i)b.classList.add("wrong")});$("qFeedback").textContent=(i===q[2]?"✓ Chính xác! ":"✦ Chưa đúng. ")+q[3];$("qScore").textContent=`Điểm: ${score}`;$("qBar").style.width=`${(qi+1)/qs.length*100}%`;$("qNext").disabled=false}
+$("qNext").onclick=()=>{if(!done)return;if(qi<qs.length-1){qi++;drawQ()}else{$("qText").textContent=`Bạn đạt ${score}/${qs.length} điểm!`;$("qAnswers").innerHTML="";$("qFeedback").textContent=score>=10?"Xuất sắc! Bạn đã ghi nhớ rất tốt các kiến thức cơ bản.":"Hãy xem lại các bài học và thử sức lần nữa nhé.";$("qHint").textContent="Kết quả chỉ nhằm ôn tập kiến thức."; $("qNext").textContent="Làm lại từ đầu";$("qNext").onclick=()=>{qi=0;score=0;$("qNext").onclick=null;drawQ()}}};
+drawQ();
+
+const ss=[
+{t:"Khói xuất hiện ở hành lang trường học",d:"Bạn đang trong lớp và thấy khói ở hành lang. Bạn nên làm gì?",o:["Tự ra hành lang tìm hiểu","Báo giáo viên, làm theo hướng dẫn và dùng lối thoát an toàn","Thu dọn đồ cá nhân trước"],c:1,r:"Báo giáo viên/người phụ trách, làm theo kế hoạch thoát nạn của trường và tránh khu vực có khói."},
+{t:"Phát hiện mùi khét trong nhà",d:"Bạn ở nhà và ngửi thấy mùi khét bất thường nhưng chưa biết nguyên nhân.",o:["Báo người lớn, tránh xa khu vực nghi có nguy hiểm","Tự tháo thiết bị điện kiểm tra","Bỏ qua vì chưa thấy lửa"],c:0,r:"Không tự kiểm tra hoặc sửa thiết bị. Hãy báo người lớn, giữ khoảng cách và gọi trợ giúp nếu phát hiện cháy."},
+{t:"Chuông báo cháy ở nơi công cộng",d:"Bạn đang ở trung tâm thương mại và nghe chuông báo cháy.",o:["Chờ xem người khác làm gì","Đi thang máy xuống tầng trệt","Bình tĩnh làm theo hướng dẫn, tìm lối thoát và đến nơi an toàn"],c:2,r:"Không bỏ qua chuông báo. Chú ý hướng dẫn của nhân viên, đi theo lối thoát nạn và không dùng thang máy."},
+{t:"Lối ra bị khói chặn",d:"Bạn thấy lối ra gần nhất có khói dày và không thể đi qua an toàn.",o:["Cố chạy thật nhanh xuyên qua","Tìm nơi an toàn hơn, đóng cửa ngăn khói nếu có thể, gọi 114 và báo vị trí","Nhảy từ ban công"],c:1,r:"Không đi xuyên qua khói dày và không nhảy từ trên cao. Gọi 114, nói rõ vị trí và làm theo hướng dẫn."},
+{t:"Cần báo tin cho 114",d:"Bạn đã ra nơi an toàn và cần thông báo có thể còn người ở trong tòa nhà.",o:["Chỉ nói tên mình","Nói địa chỉ, vị trí cháy, thông tin người có thể mắc kẹt và số liên hệ nếu được hỏi","Cúp máy ngay sau khi nói có cháy"],c:1,r:"Cung cấp địa chỉ rõ ràng, tình hình, vị trí người có thể mắc kẹt và làm theo câu hỏi/hướng dẫn của tổng đài."}
+];
+let si=0;
+function drawS(){let s=ss[si];$("sTitle").textContent=s.t;$("sText").textContent=s.d;$("sResult").style.display="none";$("sRetry").style.display="none";$("sOptions").innerHTML="";s.o.forEach((v,i)=>{let b=document.createElement("button");b.textContent=String.fromCharCode(65+i)+". "+v;b.onclick=()=>{[...$("sOptions").children].forEach(x=>x.disabled=true);$("sResult").style.display="block";$("sResult").textContent=(i===s.c?"✓ Đây là lựa chọn an toàn hơn. ":"✦ Hãy cùng rút kinh nghiệm. ")+s.r;$("sRetry").style.display="inline-block"};$("sOptions").appendChild(b)})}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{si=Number(b.dataset.i);document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b));drawS()});
+$("sRetry").onclick=drawS;drawS();
+</script>
+</body></html>
